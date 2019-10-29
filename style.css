@@ -117,7 +117,7 @@ input::placeholder {
 	position: 	relative;	
 
 }
-.product-count a {
+.product-count p {
 
 	position: 	absolute;	
 	padding-top: 2px;
@@ -299,13 +299,25 @@ color: 	#333;
 .like-img:hover {
 	background-color: #538BC4;
 	background-image: url(images/like-active.png);
-
-	
-	
-	
-	
-
 }
+
+.liked {
+	position: absolute;
+	border: 0.5px solid #538BC4;
+	height: 27px;
+	width: 27px;
+	
+	right: 8px;
+	top: 43px;
+	
+	opacity: .9;
+	background-color: #538BC4;
+	background-image: url(images/like-active.png);
+
+}	
+	
+	
+
 
 .flex h1 {
 	font-size: 30px; 

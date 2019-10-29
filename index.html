@@ -42,7 +42,7 @@
   						<input class="foto" type="image" name="image" src="images/search.png"></div>
 					</form>
   					</div>
- 					<div class="product-count"><a href="#">4</a>
+ 					<div class="product-count" ><p id="products-count">0</p>
  					</div>
 				</div>
 			</div>
@@ -124,7 +124,7 @@
 					  								<div class="container-img">
 					  								<img class="img-flex-1" src="images/desctop.png" >
 					  								<div class="compare-img"></div>
-					  								<div class="like-img"></div>
+					  								<div class="like-img " id="like-product"></div>
 					  								</div>
 					  								<h1>#1 Device name</h1>
 					  								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
@@ -137,7 +137,7 @@
 					  								</div>
 					  								
 					  								<div class="more_details"><span>more details</span></div>
-					  								<div class="add_to_cart"><span>add to cart</span></div>
+					  								<div class="add_to_cart"><span class="add-to-cart">add to cart</span></div>
 
 					  							</div>
 					  						</div>
@@ -159,7 +159,7 @@
 					  								</div>
 					  								
 					  								<div class="more_details"><span>more details</span></div>
-					  								<div class="add_to_cart"><span>add to cart</span></div>
+					  								<div class="add_to_cart"><span class="add-to-cart">add to cart</span></div>
 
 					  							</div>
 					  						</div>
@@ -181,7 +181,7 @@
 					  								</div>
 					  								
 					  								<div class="more_details"><span>more details</span></div>
-					  								<div class="add_to_cart"><span>add to cart</span></div>
+					  								<div class="add_to_cart"><span class="add-to-cart">add to cart</span></div>
 
 					  							</div>
 					  						</div>
@@ -207,7 +207,7 @@
 					  								</div>
 					  								
 					  								<div class="more_details"><span>more details</span></div>
-					  								<div class="add_to_cart"><span>add to cart</span></div>
+					  								<div class="add_to_cart"><span class="add-to-cart">add to cart</span></div>
 
 					  							</div>
 					  						</div>
@@ -228,7 +228,7 @@
 					  								</div>
 					  								
 					  								<div class="more_details"><span>more details</span></div>
-					  								<div class="add_to_cart"><span>add to cart</span></div>
+					  								<div class="add_to_cart"><span class="add-to-cart">add to cart</span></div>
 
 					  							</div>
 					  						</div>
@@ -249,7 +249,7 @@
 					  								</div>
 					  								
 					  								<div class="more_details"><span>more details</span></div>
-					  								<div class="add_to_cart"><span>add to cart</span></div>
+					  								<div class="add_to_cart"><span class="add-to-cart">add to cart</span></div>
 
 					  							</div></div>
 					  						
@@ -273,7 +273,7 @@
 					  								</div>
 					  								
 					  								<div class="more_details"><span>more details</span></div>
-					  								<div class="add_to_cart"><span>add to cart</span></div>
+					  								<div class="add_to_cart"><span class="add-to-cart">add to cart</span></div>
 
 					  							</div></div>
 					  						<div class="flex"><div class="flex-1">
@@ -293,7 +293,7 @@
 					  								</div>
 					  								
 					  								<div class="more_details"><span>more details</span></div>
-					  								<div class="add_to_cart"><span>add to cart</span></div>
+					  								<div class="add_to_cart"><span class="add-to-cart">add to cart</span></div>
 
 					  							</div></div>
 					  						<div class="flex"><div class="flex-1">
@@ -313,7 +313,7 @@
 					  								</div>
 					  								
 					  								<div class="more_details"><span>more details</span></div>
-					  								<div class="add_to_cart"><span>add to cart</span></div>
+					  								<div class="add_to_cart"><span class="add-to-cart">add to cart</span></div>
 
 					  							</div></div>
 					  						
@@ -326,6 +326,19 @@
 					</div>
 	</main>
 	<footer class="footer"></footer>
+	<script src="app.js"></script>
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script>
+
+   $("div.like-img").click(function () {
+
+     $(this).toggleClass("liked");
+
+   });
+
+</script>
+
+
 </body>
 </html>
 
